@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="gamestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" >
+    <title>
+        Danger! Chupacabra!
+    </title>
+</head>
+<body width="device-width" height="device-height" onload="randomCard()">
+        
+    <div class="gameGrid" id="gameGrid" >
+        <span class="firstCard">
+        <div class="scene scene--card">
+            <div class="card" >
+                <div class="card__face card__face--front" onclick="checkWin1()"><img src="ImagesGame/cardBackSide.png" width="200" height="300"></div>
+                <div class="card__face card__face--back" id="1"></div>
+            </div>
+        </div>
+        </span>
+        <span class="secondCard">
+        <div class="scene scene--card">
+            <div class="card" >
+                <div class="card__face card__face--front" onclick="checkWin2()"><img src="ImagesGame/cardBackSide.png" width="200" height="300"></div>
+                <div class="card__face card__face--back" id="2"></div>
+            </div>
+        </div>
+        </span>
+        <span class="thirdCard">
+        <div class="scene scene--card">
+            <div class="card">
+                <div class="card__face card__face--front" onclick="checkWin3()"><img src="ImagesGame/cardBackSide.png" width="200" height="300"></div>
+                <div class="card__face card__face--back" id="3"></div>
+            </div>
+        </div>
+        </span>
+    </div>
+    <div class="endGame" id="endGame">
+        
+    </div>
+    <center>
+        <button class="rematch" type="button" id="rematch" onclick="window.location.reload()">
+            <b style="font-family: 'Press Start 2P', cursive; font-size:15px;">Rematch</b>
+        </button>
+    </center> 
+    <div class="Copyright"> <b style="font-family: 'Press Start 2P', cursive; font-size:15px;">Made by Ralphas© V1.0</b></div>
+    
+    <script src="gameScript.js"></script>
+</body>
+</html>
